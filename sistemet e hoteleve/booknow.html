@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - Imperial Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+       <!-- Header -->
+       <header>
+        <div class="navbar">
+            <!-- Logo dhe emri i hotelit -->
+            <div class="logo">
+                <img src="logo.png" alt="Imperial Logo">
+                <span>Imperial Hotel</span>
+            </div>
+    
+            <!-- Lidhjet e faqeve -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="booknow.html">Book Now</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Search bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">&#128269;</button> <!-- Ikona për search -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Book Your Stay</h1>
+        <form action="#">
+            <label for="check-in">Check-in:</label>
+            <input type="date" id="check-in" name="check-in"><br>
+
+            <label for="check-out">Check-out:</label>
+            <input type="date" id="check-out" name="check-out"><br>
+
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type">
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select><br>
+
+            <input type="submit" value="Book Now" style="color: white; background-color:  #2b1b2e; margin-left: 10px;" onclick="showSuccessMessage(); return false;">
+        </form>
+        <script>
+            // Funksioni që shfaq mesazhin e suksesit dhe falënderimin
+            function showSuccessMessage() {
+                alert("Rezervimi u krye me sukses!");
+                alert("Faleminderit!");
+            }
+            </script>
+    </main><br><br><br><br><br><br><br>
+
+     <!-- Footer -->
+     <footer>
+        <p>&copy; 2024 Imperial Hotel | All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="#" title="Facebook">
+                <img src="facebook-logo-png-white-image-galleries--imagekbm-25.png" alt="Facebook" >
+            </a>
+            <a href="#" title="Instagram">
+                <img src="instagram.png" alt="Instagram">
+            </a>
+        </div>
+        <p>Phone: +383 45 256 235</p>
+    </footer>
+</body>
+</html>
